@@ -6,6 +6,7 @@ from car import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('',views.Home),
-    path('/predict',views.predict),
+    path('',views.Home,name='Home'),
+    path('predict/',views.predict,name='predict'),
 ]
+# r'^predict/$
